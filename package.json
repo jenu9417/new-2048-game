@@ -9,13 +9,21 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "eas-cli": "^16.4.0",
     "expo": "~53.0.6",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-dom": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-bootsplash": "^6.3.7",
+    "react-native-web": "^0.20.0",
+    "expo-dev-client": "~5.1.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@react-native-community/cli": "^18.0.0"
   },
   "private": true
 }
