@@ -151,6 +151,10 @@ export default function App() {
       setGrid(addedTileGrid);
       setScore(prev => {
         const newScore = prev + addedTileGrid.flat().reduce((acc, val) => acc + val, 0);
+        if (newScore > highScore) {
+          setHighScore(newScore);
+          AsyncStorage.setItem('highScore', newScore.toString());
+        }
         return newScore;
       });
       saveGameState();
